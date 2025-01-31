@@ -64,8 +64,9 @@
             height: 40px;
             width: 135px;
             }
-            .imageshadow {
+            .image {
                 filter: drop-shadow(5px 5px 10px #0000004d);
+                border-radius: 5px;
             }
             .footer {
                 text-align: center;
@@ -79,7 +80,7 @@
     <body>
         <div class="container">
             <div class="header">
-                <img src="Logo_white.png" alt="CareWithU Logo" class="imageshadow">
+                <img src="Logo_white.png" alt="CareWithU Logo" class="image">
                 <!--TODO: Make sure that [USERNAME] becomes client's name -->
                 <h1>Welcome to CareWithU, [USERNAME]!</h1>
             </div>
@@ -92,7 +93,10 @@
                 <p>Downlad our app onto your mobile device. It's available for both Apple and Android devices.</p>
                 <!--TODO: Create links to app stores-->
                 <div class="center-container">
-                    <img src="app-store.webp" alt="Apple App Store Logo" height="40" width="135" class="applogo">&nbsp;&nbsp;<img src="GooglePlay.webp" height="40"width="135" class="applogo">
+                    <img src="app-store.webp" alt="Apple App Store Logo" class="applogo">
+                    &nbsp;
+                    &nbsp;
+                    <img src="GooglePlay.webp" alt="Google Play Store Logo" class="applogo">
                 </div>
 
             
