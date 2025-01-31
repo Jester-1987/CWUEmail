@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,75 +12,76 @@
                 margin: 0;
                 padding: 0;
             }
-
             .container {
                 max-width: 600px;
                 margin: 20px auto;
-                background: #ffffff;
+                background: #fff;
                 border-radius: 8px;
                 overflow: hidden;
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 4px 10px #0000001a;
             }
             .center-container {
                 display: flex;
                 justify-content: center;          
             }
-
             .header {
                 background: #40A578;                
-                color: #ffffff;
+                color: #fff;
                 text-align: center;
                 padding: 20px;
+                text-shadow: 3px 3px 5px #0000004d;
             }
-
             .header img {
                 max-width: 80px;
                 margin-bottom: 10px;
             }
-
             .content {
                 padding: 30px;
-                color: #333333;
+                color: #333;
             }
-
             .content h1 {
                 font-size: 24px;
                 color: #0a5c5a;
-                
+                text-shadow: 2px 2px 2px #c3c3c3;                
             }
-
             .content p {
                 font-size: 20px;
                 line-height: 24px;
             }
-
             .button {
                 display: inline-block;
                 background: #1D1E25;
-                color: #ffffff;
+                color: #fff;
                 padding: 12px 20px;
                 text-decoration: none;
                 font-weight: bold;
                 border-radius: 5px;
                 margin-top: 10px;
             }
-
+            .applogo {
+            filter: drop-shadow(3px 3px 5px #0000004d);
+            height: 40px;
+            width: 135px;
+            }
+            .image {
+                filter: drop-shadow(5px 5px 10px #0000004d);
+                border-radius: 10px;
+            }
             .footer {
                 text-align: center;
                 padding: 20px;
                 font-size: 14px;
-                color: #777777;
+                color: #777;
                 background: #f1f1f1;
             }
         </style>
     </head>
-
     <body>
         <div class="container">
             <div class="header">
-                <img src="Logo_white.png" alt="CareWithU Logo" style="filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));">
-                
-                <h1 style="text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);">Welcome to CareWithU, [USERNAME]!</h1>
+                <img src="Logo_white.png" alt="CareWithU Logo" class="imageshadow">
+                <!--TODO: Make sure that [USERNAME] becomes client's name -->
+                <h1>Welcome to CareWithU, [USERNAME]!</h1>
             </div>
             <div class="content">
                 <p>Thank you for joining CareWithU! We're excited to have you on board and we can't wait to connect you to the caregivers that are the perfect fit for you!</p>
@@ -89,30 +89,33 @@
                
                 <h1>Step One:</h1>
                 <p>Download our app onto your mobile device. It's available for both Apple and Android devices.</p>
-               <!--TODO: Create links to app stores -->
-               <div class="center-container">
-               <img src="app-store.webp" alt="Apple App Store Logo" height="40"width="135">&nbsp;&nbsp;<img src="GooglePlay.webp" height="40"width="135">
-               </div>
-               <br>               
+                <!--TODO: Create links to app stores -->
+                <div class="center-container">
+                    <img src="app-store.webp" alt="Apple App Store Logo" class="applogo">
+                    &nbsp;
+                    &nbsp;
+                    <img src="GooglePlay.webp" alt="Google Play Logo" class="applogo">
+                </div>
+                <br>               
                
-               <h1>Step Two:</h1>
-               <p>Once you open the app on your mobile device, you will be asked to sign in with your e-mail address and password.</p>
-               <div class="center-container">
-                <img src="SignIn.png" alt="Sign In Page" style="border-radius: 10px;filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));">
-               </div>
-               <br>
+                <h1>Step Two:</h1>
+                <p>Once you open the app on your mobile device, you will be asked to sign in with your e-mail address and password.</p>
+                <div class="center-container">
+                <img src="SignIn.png" alt="Sign In Page" class="image">
+                </div>
+                <br>
                
-               <h1>Step Three:</h1>
-               <p>Choose whether the care is for yourself or a loved one. We also work with clients&#47;residents who are living in care facilities.</p>
-               <div class="center-container">
-                <img src="WhoNeedsCare.png" alt="Who Needs Care?" style="border-radius: 10px;filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));">
+                <h1>Step Three:</h1>
+                <p>Choose whether the care is for yourself or a loved one. We also work with clients&#47;residents who are living in care facilities.</p>
+                <div class="center-container">
+                <img src="WhoNeedsCare.png" alt="Who Needs Care?" class="image">
                 </div>
                 <br>
         
                 <h1>Step Four:</h1>
                 <p>Choose the type of care you would like to recieve. We offer a wide range of services; see this section of our app for an entire list. You can choose as many or as few as you need.</p>
                 <div class="center-container">
-                <img src="TypesOfCare.png" alt="Types of Care" style="border-radius: 10px;filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));">
+                <img src="TypesOfCare.png" alt="Types of Care" class="image">
                 </div>
                 <br>                
 
@@ -120,7 +123,7 @@
                 <p>After choosing the type of care you like to recive, you can also specify how much or how little care you could like to recieve. You can also describe the task you need in more detail.</p>
                 <p>Now there's only one more step to go!</p>
                 <div class="center-container">
-                <img src="TaskSize.png" alt="TaskSize" style="border-radius: 10px;filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));">
+                <img src="TaskSize.png" alt="TaskSize" class="image">
                 </div>
                 <br>                
 
@@ -128,7 +131,7 @@
                 <p>Our app will now show you a list of all the qualified caregivers who are available to help. You can tap on their profiles to schedule a visit.</p>
                 <p>For your safety, we ensure on our end that all caregivers have the necessary qualifications and are screened through security checks.</p>
                 <div class="center-container">
-                <img src="CaregiverProifle.png" alt="Caregiver Proifle" style="border-radius: 10px;filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));">
+                <img src="CaregiverProifle.png" alt="Caregiver Proifle" class="image">
                 </div>
                 <br>
               
@@ -137,15 +140,18 @@
                 <p>We&apos;re thrilled to have you as part of the CareWithU community. Let&apos;s make a difference together!</p>
                 <p><strong>— The CareWithU Team</strong></p>
             </div>
+
             <div class="footer">
                 <!--TODO: Create links to App stores-->
                 <p><strong>Download our App today!</strong></p>
-                <img src="app-store.webp" alt="Apple App Store Logo" height="40"width="135">&nbsp;&nbsp;<img src="GooglePlay.webp" height="40"width="135">
+                <img src="app-store.webp" alt="Apple App Store Logo" class="applogo">
+                &nbsp;
+                &nbsp;
+                <img src="GooglePlay.webp" alt="Google Play Store Logo" class="applogo">
                 
                 <p>Follow us on <a href="http://www.carewithu.com/social">social media</a></p>
                 <p>&copy; CareWithU Inc. All rights reserved.</p>
             </div>
         </div>
     </body>
-
 </html>
