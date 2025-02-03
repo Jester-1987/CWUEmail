@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome to CareWithU</title>
+        <style>
+            body {
+                background-color: #f6f6f9;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 600px;
+                margin: 20px auto;
+                background: #fff;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0px 4px 10px #0000001a;
+            }
+            .center-container {
+                display: flex;
+                justify-content: center;
+            }
+            .header {
+                background: #40A578;                
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+                text-shadow: 3px 3px 5px #0000004d;
+            }
+            .header img {
+                max-width: 80px;
+                margin-bottom: 10px;
+            }
+            .content {
+                padding: 30px;
+                color: #333;
+            }
+            .content h1 {
+                font-size: 24px;
+                color: #0a5c5a;
+                /* text-shadow: 2px 2px 2px #c3c3c3; */
+                text-align: center;                
+            }
+            .content p {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            .button {
+                display: inline-block;
+                background: #1D1E25;
+                color: #fff;
+                padding: 12px 20px;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 5px;
+                margin-top: 10px;
+                box-shadow: 3px 3px 5px #0000004d;
+            }
+            .applogo {
+            filter: drop-shadow(3px 3px 5px #0000004d);
+            height: 40px;
+            width: 135px;
+            }
+            .image {
+                filter: drop-shadow(5px 5px 10px #0000004d);
+                border-radius: 5px;
+            }
+            .footer {
+                text-align: center;
+                padding: 20px;
+                font-size: 14px;
+                color: #777;
+                background: #f1f1f1;
+            }
+            table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 20px;
+            text-align: left;
+        }
+        th, td {
+            padding: 5px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <!--Don't use img class on logo as it rounds the edges!-->
+                <img src="Logo_white.png" alt="CareWithU Logo">
+                <!--TODO: Make sure that [USERNAME] becomes client's name -->
+                <h1>Welcome to CareWithU, [USERNAME]!</h1>
+            </div>
+            <div class="content">
+                <h1>Thank you for booking your appointment with CareWithU!</h1>
+                <!--TODO: Make the Name/Date/Time/Address correspond to the appointment details on the site/app-->
+                <p>Your appointment is with [CAREGIVER/CARESEEKER] booked for the following:</p>
+                
+                <table>
+                    <tr>
+                        <td><strong>Date:</strong></td>
+                        <td>[INSERT DATE HERE]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Time:</strong></td>
+                        <td>[INSERT TIME HERE]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Address:</strong></td>
+                        <td>Street Address<br>
+                        City</td>
+                    </tr>
+                </table>
+                <p class="button">Add to Calendar</p>
+                <br>
+                <!--TODO: Change off the shelf code to adapt to the actual details of the appointment and not just silly Doctor Who references... no matter how much they made me giggle as the nerd I am.-->
+                    <a target="_blank" rel="noopener" target="_blank" href="https://outlook.office.com/calendar/0/deeplink/compose?body=Learn%20all%20about%20the%20rules%20of%20the%20Motorway%20and%20how%20to%20access%20the%20fast%20lane.%0A%0Ahttps%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGridlock_%28Doctor_Who%29&enddt=2022-01-12T20%3A00%3A00%2B00%3A00&location=New%20Earth&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2022-01-12T18%3A00%3A00%2B00%3A00&subject=Welcome%20to%20the%20Motorway" target="_blank">Outlook.com</a> | <a target="_blank" rel="noopener" target="_blank" href="https://outlook.office.com/calendar/0/deeplink/compose?body=Learn%20all%20about%20the%20rules%20of%20the%20Motorway%20and%20how%20to%20access%20the%20fast%20lane.%0A%0Ahttps%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGridlock_%28Doctor_Who%29&enddt=2022-01-12T20%3A00%3A00%2B00%3A00&location=New%20Earth&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2022-01-12T18%3A00%3A00%2B00%3A00&subject=Welcome%20to%20the%20Motorway" target="_blank">Office 365</a> | <a target="_blank" rel="noopener" target="_blank" href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220112T180000Z%2F20220112T200000Z&details=Learn%20all%20about%20the%20rules%20of%20the%20Motorway%20and%20how%20to%20access%20the%20fast%20lane.%0A%0Ahttps%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGridlock_%28Doctor_Who%29&location=New%20Earth&text=Welcome%20to%20the%20Motorway" target="_blank">Google</a> | <a target="_blank" rel="noopener" target="_blank" href="https://calendar.aol.com/?desc=Learn%20all%20about%20the%20rules%20of%20the%20Motorway%20and%20how%20to%20access%20the%20fast%20lane.%0A%0Ahttps%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGridlock_%28Doctor_Who%29&dur=&et=20220112T190000Z&in_loc=New%20Earth&st=20220112T170000Z&title=Welcome%20to%20the%20Motorway&v=60" target="_blank">AOL</a> | <a  target="_blank" rel="noopener" target="_blank" href="https://calendar.yahoo.com/?desc=Learn%20all%20about%20the%20rules%20of%20the%20Motorway%20and%20how%20to%20access%20the%20fast%20lane.%0A%0Ahttps%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGridlock_%28Doctor_Who%29&dur=&et=20220112T190000Z&in_loc=New%20Earth&st=20220112T170000Z&title=Welcome%20to%20the%20Motorway&v=60" target="_blank">Yahoo</a></p>
+                <p>If you need to make any changes or cancel this appointment, please <a href="carewithu.com/appointments">click here!</a></p>
+                <p>We look forward to seeing you soon.</p>
+            <div class="footer">
+                <!--TODO: Create links to App store -->
+                <p><strong>Download our App today!</strong></p>
+                <img src="app-store.webp" alt="Apple App Store Logo" class="applogo">
+                &nbsp;
+                &nbsp;
+                <img src="GooglePlay.webp" alt="Google Play Store Logo" class="applogo">
+                
+                <p>Follow us on <a href="http://www.carewithu.com/social">social media</a></p>
+                <p>&copy; CareWithU Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </body>
+
+</html>
