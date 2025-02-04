@@ -5,9 +5,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Appointment Booking</title>
+        <title>Deactivation</title>
         <style>
-      body {
+            body {
                 background-color: #f6f6f9;
                 font-family: Arial, sans-serif;
                 margin: 0;
@@ -82,14 +82,6 @@
                 color: #777;
                 background: #f1f1f1;
             }
-            th, td {
-                padding: 5px;
-                font-size: 20px;
-                font-family: Poppins, sans-serif;
-            }
-            th {
-                background-color: #f4f4f4;
-            }
         </style>
     </head>
     <body>
@@ -98,44 +90,21 @@
                 <!--Don't use img class on logo as it rounds the edges!-->
                 <img src="img/LogoTransparent.png" alt="CareWithU Logo">
                 <!--TODO: Make sure that [USERNAME] becomes client's name -->
-                <h1>Welcome to CareWithU, [USERNAME]!</h1>
+                <h1>Sorry To See You Go, [USERNAME]!</h1>
             </div>
             <div class="content">
-                <h1>Thank you for booking your appointment with CareWithU!</h1>
-                <!--TODO: Make the Name/Date/Time/Address correspond to the appointment details on the site/app-->
-                <p>Your appointment is with [CAREGIVER/CARESEEKER] booked for the following:</p>
-                
-                <table>
-                    <tr>
-                        <td><strong>Date:</strong></td>
-                        <td>[INSERT DATE HERE]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Time:</strong></td>
-                        <td>[INSERT TIME HERE]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Address:</strong></td>
-                        <td>Street Address<br>
-                        City</td>
-                    </tr>
-                </table>
-                <h1>Add Appointment To Calendar</h1>
-                <!--TODO: Change off the shelf code to adapt to the actual details of the appointment and not just silly Doctor Who references... no matter how much they made me giggle as the nerd I am.-->
-                    <a class="button" target="_blank" rel="noopener" target="_blank" href="https://outlook.office.com/calendar/0/deeplink/compose?body=Learn%20all%20about%20the%20rules%20of%20the%20Motorway%20and%20how%20to%20access%20the%20fast%20lane.%0A%0Ahttps%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGridlock_%28Doctor_Who%29&enddt=2022-01-12T20%3A00%3A00%2B00%3A00&location=New%20Earth&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2022-01-12T18%3A00%3A00%2B00%3A00&subject=Welcome%20to%20the%20Motorway" target="_blank">Outlook.com</a>  
-                    
-                    <a class="button" target="_blank" rel="noopener" target="_blank" href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220112T180000Z%2F20220112T200000Z&details=Learn%20all%20about%20the%20rules%20of%20the%20Motorway%20and%20how%20to%20access%20the%20fast%20lane.%0A%0Ahttps%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGridlock_%28Doctor_Who%29&location=New%20Earth&text=Welcome%20to%20the%20Motorway" target="_blank">Google</a></p>
-
-                    <p>If you need to make any changes or cancel this appointment, please&nbsp;<a href="www.carewithyou.com/appointment">click here</a>.</p>
-
-                    <p>If you have any questions or need assistance, our team is here to help! Feel free to&nbsp;<a href="http://www.carewithu.com/contact">contact us</a> anytime.</p>
-                
-                    <p>We look forward to seeing you soon.</p>
-                
-                    <p><h1>- The CareWithU Team</h1></p>
+                <!--TODO: Make sure that [USERNAME] becomes client's name-->
+                <p>This email is to confirm the deactivation of [UESRNAME]&apos;s profile.</p>
+                <p>We understand that circumstances change over time, but we are glad that you chose us as part of your care journey.</p>
+                <p>If there are any outstanding fees on the account, you will receive the invoices in a seperate email.</p>
+                <p>Please feel free to reach out to us any time if we can be of service to you again in the future.</p>
+                <p>Thank you once again for choosing us.</p>                
+                <p><h1>— The CareWithU Team</h1></p>
             </div>
-            
             <div class="footer">
+                <div class="center-container">
+                    <img src="img/logoC.png" class="logoC" alt="Logo">
+                </div>
                 <!--TODO: Create links to App store -->
                 <p><strong>Download our App today!</strong></p>
                 <img src="img/app-store.webp" alt="Apple App Store Logo" class="applogo">
@@ -148,5 +117,4 @@
             </div>
         </div>
     </body>
-
 </html>
