@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,25 +29,26 @@
                 background: #40A578;                
                 color: #fff;
                 text-align: center;
+                font-family: Caprasimo, sans-serif;
                 padding: 20px;
-                text-shadow: 3px 3px 5px #0000004d;
             }
             .header img {
-                max-width: 80px;
-                margin-bottom: 10px;
+                max-width: 100%;
+                height: auto;
             }
             .content {
                 padding: 30px;
                 color: #333;
             }
             .content h1 {
-                font-size: 24px;
-                color: #0a5c5a;
-                text-shadow: 2px 2px 2px #c3c3c3;                
+                font-family: Caprasimo, sans-serif;
+                font-size: 30px;
+                color: #40A578;                
             }
             .content p {
                 font-size: 20px;
                 line-height: 24px;
+                font-family: Poppins, sans-serif;
             }
             .button {
                 display: inline-block;
@@ -68,10 +70,15 @@
                 filter: drop-shadow(5px 5px 10px #0000004d);
                 border-radius: 5px;
             }
+            .logoC {
+                height: 25%;
+                width: 25%;
+            }
             .footer {
                 text-align: center;
                 padding: 20px;
                 font-size: 14px;
+                font-family: Poppins, sans-serif;
                 color: #777;
                 background: #f1f1f1;
             }
@@ -81,7 +88,7 @@
         <div class="container">
             <div class="header">
                 <!--Don't use img class on logo as it rounds the edges!-->
-                <img src="Logo_white.png" alt="CareWithU Logo">
+                <img src="img/LogoTransparent.png" alt="CareWithU Logo">
                 <!--TODO: Make sure that [USERNAME] becomes client's name -->
                 <h1>Welcome to CareWithU, [USERNAME]!</h1>
             </div>
@@ -91,10 +98,10 @@
                 <p>If you haven&apos;t already done so, please download our app onto your mobile device. It&apos;s available for both Apple and Android devices.</p>
                 <!--TODO: Create links to app stores-->
                 <div class="center-container">
-                    <img src="app-store.webp" alt="Apple App Store Logo" class="applogo">
+                    <img src="img/app-store.webp" alt="Apple App Store Logo" class="applogo">
                     &nbsp;
                     &nbsp;
-                    <img src="GooglePlay.webp" alt="Google Play Store Logo" class="applogo"> 
+                    <img src="img/GooglePlay.webp" alt="Google Play Store Logo" class="applogo"> 
                 </div>
                 <br>                                
                 <p>Once you&apos;ve done so, please visit your <strong>profile page</strong> to get started!</p> 
@@ -104,21 +111,24 @@
                <p>Please ensure that all the necessary documents, such as your qualification certificates and vaccination records are uploaded.</p>
                <p>You will also be asked to complete your profile letting your potential clients know all about you and the unique skills you have to offer. From here you can also set things like your hourly rate and how you would like to be paid so you can start being your own boss.</p>
                 <div class="center-container">
-                    <img src="OwnBoss.png" class="image">
+                    <img src="img/OwnBoss.png" class="image">
                 </div>
                 <p>If you have any questions or need assistance, our team is here to help! Feel free to <a href="http://www.carewithu.com/contact">contact us</a> anytime.</p>
                 
                 <p>We&apos;re thrilled to have you as part of the CareWithU community. Let&apos;s make a difference together!</p>
                 
-                <p><strong>— The CareWithU Team</strong></p>
+                <p><h1>— The CareWithU Team</h1></p>
             </div>
             <div class="footer">
+                <div class="center-container">
+                    <img src="img/logoC.png" class="logoC" alt="Logo">
+                </div>
                 <!--TODO: Create links to App store -->
                 <p><strong>Download our App today!</strong></p>
-                <img src="app-store.webp" alt="Apple App Store Logo" class="applogo">
+                <img src="img/app-store.webp" alt="Apple App Store Logo" class="applogo">
                 &nbsp;
                 &nbsp;
-                <img src="GooglePlay.webp" alt="Google Play Store Logo" class="applogo">
+                <img src="img/GooglePlay.webp" alt="Google Play Store Logo" class="applogo">
                 
                 <p>Follow us on <a href="http://www.carewithu.com/social">social media</a></p>
                 <p>&copy; CareWithU Inc. All rights reserved.</p>
