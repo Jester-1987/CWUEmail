@@ -5,9 +5,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Verified</title>
+        <title>Appointment Pending</title>
         <style>
-            body {
+      body {
                 background-color: #f6f6f9;
                 font-family: Arial, sans-serif;
                 margin: 0;
@@ -82,6 +82,14 @@
                 color: #777;
                 background: #f1f1f1;
             }
+            th, td {
+                padding: 5px;
+                font-size: 20px;
+                font-family: Poppins, sans-serif;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
         </style>
     </head>
     <body>
@@ -89,28 +97,43 @@
             <div class="header">
                 <!--Don't use img class on logo as it rounds the edges!-->
                 <img src="img/LogoTransparent.png" alt="CareWithU Logo">
-                <!--TODO: Make sure that [USERNAME] becomes client's name -->
-                <h1>You&apos;re Verified!</h1>
+                
+                <h1>Appointment pending</h1>
             </div>
             <div class="content">
-                <p>Congratulations [USERNAME].</p>
-                <p>This email is to inform you that you have passed our verification checks and are now a verified caregiver with CareWithU!</p>
-                <br>
-                    <div class="center-container">
-                        <!--TODO: replace with actual verification mark-->
-                        <img src="img/VerifiedCheck.png" class="image" height="300" width="300">
-                    </div>
-                <br>
-                <p>Your profile page will now bear this symbol so all your clients will know you&apos;re a cut above the rest.</p>
+                <p>Hello [CAREGIVER].</p>
+                
+                <p>You have a pending appointment with [CARESEEKER]. Please see the details below:</p>
+
+                <!--TODO: Make the Name/Date/Time/Address correspond to the appointment details on the site/app-->
+                
+                <table>
+                    <tr>
+                        <td><strong>Date:</strong></td>
+                        <td>[INSERT DATE HERE]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Time:</strong></td>
+                        <td>[INSERT TIME HERE]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Address:</strong></td>
+                        <td>Street Address<br>
+                        City</td>
+                    </tr>
+                </table>
+
+                <p>To confirm this appointment, please visit the website or the CareWithU mobile app.</p>
+                <p>If this appointment is not confirmed within 24 hours before it&apos;s scheduled to start, it will automatically be cancelled.</p>
 
                 <p>If you have any questions or need assistance, our team is here to help! Feel free to&nbsp;<a href="http://www.carewithu.com/contact">contact us</a> anytime.</p>
                 
-                <p><h1>— The CareWithU Team</h1></p>
+                <p>We look forward to seeing you soon.</p>
+                
+                <p><h1>- The CareWithU Team</h1></p>
             </div>
+            
             <div class="footer">
-                <div class="center-container">
-                    <img src="img/logoC.png" class="logoC" alt="Logo">
-                </div>
                 <!--TODO: Create links to App store -->
                 <p><strong>Download our App today!</strong></p>
                 <img src="img/app-store.webp" alt="Apple App Store Logo" class="applogo">
@@ -123,4 +146,5 @@
             </div>
         </div>
     </body>
+
 </html>
