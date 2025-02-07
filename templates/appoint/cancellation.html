@@ -82,6 +82,12 @@
                 color: #777;
                 background: #f1f1f1;
             }
+            .details {
+                background: #f1f1f1;
+                padding: 20px;
+                border-radius: 8px;
+                filter: drop-shadow(5px 5px 10px #0000004d);
+            }
             th, td {
                 padding: 5px;
                 font-size: 20px;
@@ -104,25 +110,27 @@
                 <p>Hello [USERNAME].</p>
                 
                 <p>The appointment below has now been cancelled as per your request.</p>
+                <br>
 
                 <!--TODO: Make the Name/Date/Time/Address correspond to the appointment details on the site/app-->
-                
-                <table>
-                    <tr>
-                        <td><strong>Date:</strong></td>
-                        <td>[INSERT DATE HERE]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Time:</strong></td>
-                        <td>[INSERT TIME HERE]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Address:</strong></td>
-                        <td>Street Address<br>
-                        City</td>
-                    </tr>
-                </table>
-
+                    <div class="details">
+                        <table>
+                            <tr>
+                                <td><strong>Date:</strong></td>
+                                <td>[INSERT DATE HERE]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Time:</strong></td>
+                                <td>[INSERT TIME HERE]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Address:</strong></td>
+                                <td>Street Address<br>
+                                    City</td>
+                            </tr>
+                        </table>
+                    </div>
+                <br>    
                 <p>If you need to schedule a new appointment, please visit the appointments section on our website or use the CareWithU app.</p>
 
                 <p>If you have any questions or need assistance, our team is here to help! Feel free to&nbsp;<a href="http://www.carewithu.com/contact">contact us</a> anytime.</p>

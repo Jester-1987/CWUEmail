@@ -82,6 +82,12 @@
                 color: #777;
                 background: #f1f1f1;
             }
+            .details {
+                background: #f1f1f1;
+                padding: 20px;
+                border-radius: 8px;
+                filter: drop-shadow(5px 5px 10px #0000004d);
+            }
             th, td {
                 padding: 5px;
                 font-size: 20px;
@@ -105,31 +111,33 @@
                 <!--TODO: Make sure that [CAREGIVER/CARESEEKER] updates to appropriate name-->
                 <p>This is just a reminder that your appointment with [CAREGIVER/CARESEEKER] is coming up in 24 hours.</p>
                 <p>Please see the details below:</p>
-
+                <br>
                 <!--TODO: Make the Name/Date/Time/Address correspond to the appointment details on the site/app-->
-                <table>
-                    <tr>
-                        <td><strong>Date:</strong></td>
-                        <td>[INSERT DATE HERE]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Time:</strong></td>
-                        <td>[INSERT TIME HERE]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Address:</strong></td>
-                        <td>Street Address<br>
-                        City</td>
-                    </tr>
-                </table>
+                    <div class="details">
+                            <table>
+                                <tr>
+                                    <td><strong>Date:</strong></td>
+                                    <td>[INSERT DATE HERE]</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Time:</strong></td>
+                                    <td>[INSERT TIME HERE]</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Address:</strong></td>
+                                    <td>Street Address<br>
+                                        City</td>
+                                </tr>
+                    </table>
+                    </div>
+                <br>
+                <p>If you need to make any changes or cancel this appointment, please visit the "Appointments" page either on our website or in the CareWithU mobile app.</p>
 
-                    <p>If you need to make any changes or cancel this appointment, please visit the "Appointments" page either on our website or in the CareWithU mobile app.</p>
-
-                    <p>If you have any questions or need assistance, our team is here to help! Feel free to&nbsp;<a href="http://www.carewithu.com/contact">contact us</a> anytime.</p>
+                <p>If you have any questions or need assistance, our team is here to help! Feel free to&nbsp;<a href="http://www.carewithu.com/contact">contact us</a> anytime.</p>
                 
-                    <p>We look forward to seeing you soon.</p>
+                <p>We look forward to seeing you soon.</p>
                 
-                    <p><h1>- The CareWithU Team</h1></p>
+                <p><h1>- The CareWithU Team</h1></p>
             </div>
             
             <div class="footer">

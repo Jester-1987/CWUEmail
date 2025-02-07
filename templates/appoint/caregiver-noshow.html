@@ -82,6 +82,12 @@
                 color: #777;
                 background: #f1f1f1;
             }
+            .details {
+                background: #f1f1f1;
+                padding: 20px;
+                border-radius: 8px;
+                filter: drop-shadow(5px 5px 10px #0000004d);
+            }
             th, td {
                 padding: 5px;
                 font-size: 20px;
@@ -104,23 +110,25 @@
                 <p>Hello [USERNAME].</p>
                 <!--TODO: Make the Name/Date/Time/Address correspond to the appointment details on the site/app-->
                 <p>Unfortunately, [CAREGIVER] will be unable to make it to the following appointment.</p>
-                
-                <table>
-                    <tr>
-                        <td><strong>Date:</strong></td>
-                        <td>[INSERT DATE HERE]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Time:</strong></td>
-                        <td>[INSERT TIME HERE]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Address:</strong></td>
-                        <td>Street Address<br>
-                        City</td>
-                    </tr>
-                </table>
-
+                <br>
+                    <div class="details">
+                        <table>
+                            <tr>
+                                <td><strong>Date:</strong></td>
+                                <td>[INSERT DATE HERE]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Time:</strong></td>
+                                <td>[INSERT TIME HERE]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Address:</strong></td>
+                                <td>Street Address<br>
+                                    City</td>
+                            </tr>
+                        </table>
+                    </div>
+                <br>        
                 <p>Please click the link below to create a new appointment with a different caregiver.</p>
 
                 <!--TODO: Add proper link to button-->

@@ -5,11 +5,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Appointment Pending</title>
+        <title>Payment Receipt</title>
         <style>
-      body {
+            body {
                 background-color: #f6f6f9;
-                font-family: Arial, sans-serif;
+                font-family: Arial, sans-serif;                
                 margin: 0;
                 padding: 0;
             }
@@ -23,7 +23,7 @@
             }
             .center-container {
                 display: flex;
-                justify-content: center;
+                justify-content: center;          
             }
             .header {
                 background: #40A578;                
@@ -43,12 +43,13 @@
             .content h1 {
                 font-family: Caprasimo, sans-serif;
                 font-size: 30px;
-                color: #40A578;                
+                color: #40A578;
+                             
             }
             .content p {
                 font-size: 20px;
                 line-height: 24px;
-                font-family: Poppins, sans-serif;
+                font-family: Poppins;
             }
             .button {
                 display: inline-block;
@@ -59,7 +60,6 @@
                 font-weight: bold;
                 border-radius: 5px;
                 margin-top: 10px;
-                box-shadow: 3px 3px 5px #0000004d;
             }
             .applogo {
             filter: drop-shadow(3px 3px 5px #0000004d);
@@ -68,12 +68,22 @@
             }
             .image {
                 filter: drop-shadow(5px 5px 10px #0000004d);
-                border-radius: 5px;
+                border-radius: 10px;
             }
             .logoC {
                 height: 25%;
                 width: 25%;
             }
+            .details {
+                background: #f1f1f1;
+                font-family: Poppins, sans-serif;
+                font-size: 20px;
+                color: 333;              
+                padding: 20px;
+                border-radius: 8px;
+                filter: drop-shadow(5px 5px 10px #0000004d);
+            }
+          
             .footer {
                 text-align: center;
                 padding: 20px;
@@ -82,67 +92,34 @@
                 color: #777;
                 background: #f1f1f1;
             }
-            .details {
-                background: #f1f1f1;
-                padding: 20px;
-                border-radius: 8px;
-                filter: drop-shadow(5px 5px 10px #0000004d);
-            }
-            th, td {
-                padding: 5px;
-                font-size: 20px;
-                font-family: Poppins, sans-serif;
-            }
-            th {
-                background-color: #f4f4f4;
-            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="header">
-                <!--Don't use img class on logo as it rounds the edges!-->
-                <img src="img/LogoTransparent.png" alt="CareWithU Logo">
-                
-                <h1>Appointment pending</h1>
-            </div>
-            <div class="content">
-                <p>Hello [CAREGIVER].</p>
-                
-                <p>You have a pending appointment with [CARESEEKER]. Please see the details below:</p>
-                <br>    
-                <!--TODO: Make the Name/Date/Time/Address correspond to the appointment details on the site/app-->
-                
-                <div class="details">
-                    <table>
-                        <tr>
-                            <td><strong>Date:</strong></td>
-                            <td>[INSERT DATE HERE]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Time:</strong></td>
-                            <td>[INSERT TIME HERE]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Address:</strong></td>
-                            <td>Street Address<br>
-                                City</td>
-                    </tr>
-                </table>
-                </div>
-                <br>
-                <p>To confirm this appointment, please visit the website or the CareWithU mobile app.</p>
-                <p>If this appointment is not confirmed within 24 hours before it&apos;s scheduled to start, it will automatically be cancelled.</p>
-
-                <p>If you have any questions or need assistance, our team is here to help! Feel free to&nbsp;<a href="http://www.carewithu.com/contact">contact us</a> anytime.</p>
-                
-                <p>We look forward to seeing you soon.</p>
-                
-                <p><h1>- The CareWithU Team</h1></p>
+                <img src="img/LogoTransparent.png"  alt="CareWithU Logo">
+                <!--TODO: Make sure that [USERNAME] becomes client's name -->
+                <h1>Your payment has been processed</h1>
             </div>
             
+            <div class="content">
+                <!--TODO: have [SERVICE] update to the provided service. -->
+            <p>Your payment for [SERVICE] has been processed. Please see the receipt below:</p>
+                <br>
+                    <div class="details">
+                        <p>[RECEIPT DETAILS]</p>
+                        <p>[RECEIPT DETAILS]</p>
+                        <p>[RECEIPT DETAILS]</p>
+                    </div>
+            <br>
+            <p>If you have any questions or need assistance, our team is here to help! Feel free to <a href="http://www.carewithu.com/contact">contact us</a> anytime.</p>
+            </div>
+
             <div class="footer">
-                <!--TODO: Create links to App store -->
+                <div class="center-container">
+                    <img src="img/logoC.png" class="logoC" alt="Logo">
+                </div>
+                <!--TODO: Create links to App stores-->
                 <p><strong>Download our App today!</strong></p>
                 <img src="img/app-store.webp" alt="Apple App Store Logo" class="applogo">
                 &nbsp;
@@ -154,5 +131,4 @@
             </div>
         </div>
     </body>
-
 </html>

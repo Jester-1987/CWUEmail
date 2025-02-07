@@ -84,6 +84,12 @@
                 height: 25%;
                 width: 25%;
             }
+            .details {
+                background: #f1f1f1;
+                padding: 20px;
+                border-radius: 8px;
+                filter: drop-shadow(5px 5px 10px #0000004d);
+            }
             .footer {
                 text-align: center;
                 padding: 20px;
@@ -105,21 +111,25 @@
             <!--TODO: have [USERNAME] change to client's name-->
             <p>Hello [USERNAME].</p>
             <p>Here&apos;s the summary of today&apos;s tasks:</p>
+            <br>
+                <div class="details">
              <!--TODO: Have ordered lists generate automatically with pending/completed tasks-->
-            <h1>Pending Tasks:</h1>
-                <blockquote>
-                    <ol>
-                        <li>Task one</li>
-                        <li>Task two</li>
-                    </ol>
-                </blockquote>
-            <h1>Completed Tasks:</h1>
-                <blockquote>
-                    <ol>
-                        <li>Task one</li>
-                        <li>Task two</li>
-                    </ol>
-                </blockquote>
+                    <h1>Pending Tasks:</h1>
+                        <blockquote>
+                            <ol>
+                                <li>Task one</li>
+                                <li>Task two</li>
+                            </ol>
+                        </blockquote>
+                    <h1>Completed Tasks:</h1>
+                        <blockquote>
+                            <ol>
+                                <li>Task one</li>
+                                <li>Task two</li>
+                            </ol>
+                        </blockquote>
+                </div>
+            <br>
             <p>If you have any questions or need assistance, our team is here to help! Feel free to <a href="http://www.carewithu.com/contact">contact us</a> anytime.</p>
                 
             <h1>-The CareWithU Team</h1>
