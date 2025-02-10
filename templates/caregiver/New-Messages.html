@@ -1,4 +1,4 @@
-<!--To be sent to caregiver if the careseeker did not show up to appoimntment.-->
+<!--To be sent to caregiver if they're a no-show to the appointment-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -6,9 +6,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Appointment No-Show</title>
+        <title>New Messages</title>
         <style>
-      body {
+            body {
                 background-color: #f6f6f9;
                 font-family: Arial, sans-serif;
                 margin: 0;
@@ -40,6 +40,16 @@
             .content {
                 padding: 30px;
                 color: #333;
+            }
+            .content ol li::marker {
+                font-family: Caprasimo, sans-serif;
+                font-weight: bold;
+                color:#40A578;
+            }
+            .content ol li{
+                font-family: Poppins, sans-serif;
+                font-size: 20px;
+                font-weight: normal;
             }
             .content h1 {
                 font-family: Caprasimo, sans-serif;
@@ -75,6 +85,12 @@
                 height: 25%;
                 width: 25%;
             }
+            .details {
+                background: #f1f1f1;
+                padding: 20px;
+                border-radius: 8px;
+                /* filter: drop-shadow(5px 5px 10px #0000004d); */
+            }
             .footer {
                 text-align: center;
                 padding: 20px;
@@ -82,19 +98,6 @@
                 font-family: Poppins, sans-serif;
                 color: #777;
                 background: #f1f1f1;
-            }
-            .details {
-                background: #f1f1f1;
-                padding: 20px;
-                border-radius: 8px;
-            }
-            th, td {
-                padding: 5px;
-                font-size: 20px;
-                font-family: Poppins, sans-serif;
-            }
-            th {
-                background-color: #f4f4f4;
             }
         </style>
     </head>
@@ -104,14 +107,30 @@
                 <!--Don't use img class on logo as it rounds the edges!-->
                 <img src="img/LogoTransparent.png" alt="CareWithU Logo">
                 
-                <h1>Your appointment has been cancelled.</h1>
+                <h1>You have new messages!</h1>
             </div>
             <div class="content">
                 <p>Hello [USERNAME].</p>
-                <p>We understand that despite your best efforts, you were unable to reach [CARESEEKER] for today's appointment.</p>
-                <p>As compensation for your time, you will be credited one hour's pay.</p>
-
-                <p>For assistance, please visit our&nbsp;<a href="http://www.carewithu.com/contact">contact page.</a></p>
+             
+                <p>You have new messages waiting for you!</p>
+                    <div class="details">
+                    <!--TODO: Show up to 9 new messages. Adjust formatting if needed.-->
+                    <ol>
+                        <li>[MESSAGE]</li>
+                        <li>[MESSAGE]</li>
+                        <li>[MESSAGE]</li>
+                        <li>[MESSAGE]</li>
+                        <li>[MESSAGE]</li>
+                        <li>[MESSAGE]</li>
+                        <li>[MESSAGE]</li>
+                        <li>[MESSAGE]</li>
+                        <li>[MESSAGE]</li>
+                    </ol>
+                    <!--TODO: only show the next line if there are more than 9 messages-->
+                    <p>Plus [INT] more!</p>
+                    </div>
+                  <a href="www.carewithu.com/messages" class="button">Click here to reply.</a>
+                  <p>For assistance, visit our&nbsp;<a href="http://www.carewithu.com/contact">contact page.</a></p>
                 
                 <p>- The CareWithU Team</p>
                 

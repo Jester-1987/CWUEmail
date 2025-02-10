@@ -1,4 +1,4 @@
-<!--To be sent to caregiver if the careseeker did not show up to appoimntment.-->
+<!--To be sent to careseeker if the caregiver has cancelled on their end, but the appointment is still requested  24 hours or more before-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -104,17 +104,40 @@
                 <!--Don't use img class on logo as it rounds the edges!-->
                 <img src="img/LogoTransparent.png" alt="CareWithU Logo">
                 
-                <h1>Your appointment has been cancelled.</h1>
+                <h1>Your appointment needs to be rescheduled.</h1>
             </div>
             <div class="content">
                 <p>Hello [USERNAME].</p>
-                <p>We understand that despite your best efforts, you were unable to reach [CARESEEKER] for today's appointment.</p>
-                <p>As compensation for your time, you will be credited one hour's pay.</p>
+                <!--TODO: Make the Name/Date/Time/Address correspond to the appointment details on the site/app-->
+                <p>Unfortunately, [CAREGIVER] will be unable to make it to the following appointment.</p>
+                <br>
+                    <div class="details">
+                        <table>
+                            <tr>
+                                <td><strong>Date:</strong></td>
+                                <td>[INSERT DATE HERE]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Time:</strong></td>
+                                <td>[INSERT TIME HERE]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Address:</strong></td>
+                                <td>Street Address<br>
+                                    City</td>
+                            </tr>
+                        </table>
+                    </div>
+                <br>        
+                <p>Please click the link below to create a new appointment with a different caregiver.</p>
+                <p>You will <u>not</u> be charged for the cancelled appointment.</p>
 
-                <p>For assistance, please visit our&nbsp;<a href="http://www.carewithu.com/contact">contact page.</a></p>
+                <!--TODO: Add proper link to button-->
+                <a href="http://www.carewithu.com/" class="button">Create New Appointment</a>
+
+                    <p>For assistance, please visit our&nbsp;<a href="http://www.carewithu.com/contact">contact page.</a></p>
                 
-                <p>- The CareWithU Team</p>
-                
+                    <p>- The CareWithU Team</p>
             </div>
             
             <div class="footer">

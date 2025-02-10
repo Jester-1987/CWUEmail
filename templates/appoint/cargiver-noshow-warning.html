@@ -1,4 +1,4 @@
-<!--To be sent to caregiver if the careseeker did not show up to appoimntment.-->
+<!--To be sent to caregiver if they're a no-show to the appointment-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Appointment No-Show</title>
+        <title>Appointment Missed</title>
         <style>
       body {
                 background-color: #f6f6f9;
@@ -104,14 +104,20 @@
                 <!--Don't use img class on logo as it rounds the edges!-->
                 <img src="img/LogoTransparent.png" alt="CareWithU Logo">
                 
-                <h1>Your appointment has been cancelled.</h1>
+                <h1>You didn't show up for your appointment</h1>
             </div>
             <div class="content">
-                <p>Hello [USERNAME].</p>
-                <p>We understand that despite your best efforts, you were unable to reach [CARESEEKER] for today's appointment.</p>
-                <p>As compensation for your time, you will be credited one hour's pay.</p>
-
-                <p>For assistance, please visit our&nbsp;<a href="http://www.carewithu.com/contact">contact page.</a></p>
+                <p>Hello [CAREGIVER].</p>
+             
+                <p>We noticed that you didn't show up for you appointment with [CARESEEKER].</p>
+                <p>We understand that life sometimes gets in the way of responsibilities, but not showing up to these appointments not only appears unprofessional, it can also put the health and safety of your clients at risk.</p>
+                <p>[CARESEEKER] is not being charged for this appointment - this also means that you will not be paid for it.</p>                
+                <p>For our records, we need to know why this appointment was missed. This step needs to be completed before you can accept/confirm any new appointments.</p>
+                <!--TODO: Direct link to proper address-->
+                <a href="www.carewithu.com/link" class="button">Click here to continue</a>
+                <p><strong>Further missed appointments without prior warning will put your account at risk of deletion!</p>
+           
+                <p>If you did attend this appointment and still received this email, please reach out to us via our&nbsp;<a href="http://www.carewithu.com/contact">contact page</a> to rectify the situation. Otherwise, follow the instructions outlined above.</strong></p>
                 
                 <p>- The CareWithU Team</p>
                 
