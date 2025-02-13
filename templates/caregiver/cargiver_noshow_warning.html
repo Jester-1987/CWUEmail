@@ -1,4 +1,4 @@
-<!--Feedback request email sent to both careseeker and caregiver after appointment has taken place-->
+<!--To be sent to caregiver if they're a no-show to the appointment-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Feedback Request</title>
+        <title>Appointment Missed</title>
         <style>
       body {
                 background-color: #f6f6f9;
@@ -55,9 +55,10 @@
                 display: inline-block;
                 background: #1D1E25;
                 color: #fff;
+                font-family: Poppins, sans-serif;
+                font-size: 20px;
                 padding: 12px 20px;
                 text-decoration: none;
-                font-weight: bold;
                 border-radius: 5px;
                 margin-top: 10px;
                 box-shadow: 3px 3px 5px #0000004d;
@@ -83,7 +84,7 @@
                 color: #777;
                 background: #f1f1f1;
             }
-                 .details {
+            .details {
                 background: #f1f1f1;
                 padding: 20px;
                 border-radius: 8px;
@@ -104,24 +105,23 @@
                 <!--Don't use img class on logo as it rounds the edges!-->
                 <img src="img/LogoTransparent.png" alt="CareWithU Logo">
                 
-                <h1>Your Feedback is Requested</h1>
+                <h1>You didn't show up for your appointment</h1>
             </div>
             <div class="content">
-                <!--TODO: update so [USERNAME] shows client's name-->
-                <p>Hello [USERNAME].</p>
-
-                <p>Your feedback is important to us.</p>
-                <p>If you have a moment, please consider leaving your thoughts with us regarding your recent appointment with [CAREGIVER/CARESEEKER] on [DAY] at [TIME].</p>
-                <!--TODO: update so [CAREGIVER/CARESEEKER] updates to the proper names. Same idea with [DAY/TIME]-->
-                <p>Your feedback helps us improve the services we provide.</p>
-                <p>We hope you had a wonderful experience, but know that we also take any concerns you may have very seriously. Our team will look into any issue you may have. Your comfort and safety are our top priority!</p>
-                <a href="www.carewithu.com/feedback" class="button">Please Provide Your Feedback</a>
-
-                <p>If you have any questions or need assistance, our team is here to help! Feel free to&nbsp;<a href="http://www.carewithu.com/contact">contact us</a> anytime.</p>
-                
-                <p>We look forward to seeing you soon.</p>
+                <p>Hello [CAREGIVER].</p>
+             
+                <p>We noticed that you didn't show up for you appointment with [CARESEEKER].</p>
+                <p>We understand that life sometimes gets in the way of responsibilities, but not showing up to these appointments not only appears unprofessional, it can also put the health and safety of your clients at risk.</p>
+                <p>[CARESEEKER] is not being charged for this appointment - this also means that you will not be paid for it.</p>                
+                <p>For our records, we need to know why this appointment was missed. This step needs to be completed before you can accept/confirm any new appointments.</p>
+                <!--TODO: Direct link to proper address-->
+                <a href="www.carewithu.com/link" class="button">Click here to continue</a>
+                <p><strong>Further missed appointments without prior warning will put your account at risk of deletion!</p>
+           
+                <p>If you did attend this appointment and still received this email, please reach out to us via our&nbsp;<a href="http://www.carewithu.com/contact">contact page</a> to rectify the situation. Otherwise, follow the instructions outlined above.</strong></p>
                 
                 <p>- The CareWithU Team</p>
+                
             </div>
             
             <div class="footer">

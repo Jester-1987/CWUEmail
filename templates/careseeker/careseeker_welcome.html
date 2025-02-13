@@ -1,4 +1,4 @@
-<!--Payment receipt-->
+<!--Careseeker welcome email-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Payment Receipt</title>
+        <title>Welcome to CareWithU</title>
         <style>
             body {
                 background-color: #f6f6f9;
@@ -56,11 +56,13 @@
                 display: inline-block;
                 background: #1D1E25;
                 color: #fff;
+                font-family: Poppins, sans-serif;
+                font-size: 20px;
                 padding: 12px 20px;
                 text-decoration: none;
-                font-weight: bold;
                 border-radius: 5px;
                 margin-top: 10px;
+                box-shadow: 3px 3px 5px #0000004d;
             }
             .applogo {
             filter: drop-shadow(3px 3px 5px #0000004d);
@@ -75,16 +77,6 @@
                 height: 25%;
                 width: 25%;
             }
-            .details {
-                background: #f1f1f1;
-                font-family: Poppins, sans-serif;
-                font-size: 20px;
-                color: 333;              
-                padding: 20px;
-                border-radius: 8px;
-                
-            }
-          
             .footer {
                 text-align: center;
                 padding: 20px;
@@ -100,24 +92,61 @@
             <div class="header">
                 <img src="img/LogoTransparent.png"  alt="CareWithU Logo">
                 <!--TODO: Make sure that [USERNAME] becomes client's name -->
-                <h1>Your payment has been processed</h1>
+                <h1>Welcome to CareWithU, [USERNAME]!</h1>
             </div>
-            
-            <div class="content">                
-                <p>Hello [USERNAME].</p>
-                <!--TODO: Make sure that [SERVICE] gets updated appropriately-->
-                <p>Your payment for [SERVICE] has been processed. Please see the receipt below:</p>
-                    <br>
-                        <div class="details">
-                            <!--TODO: Have this update with the appropriate details-->
-                            <p>[RECEIPT DETAILS]</p>
-                            <p>[RECEIPT DETAILS]</p>
-                            <p>[RECEIPT DETAILS]</p>
-                        </div>
+            <div class="content">
+                <p>Thank you for joining CareWithU! We're excited to have you on board and we can't wait to connect you to the caregivers that are the perfect fit for you!</p>
+                <p>With that in mind, please allow us to give you a brief tour of our app that has been specially designed to make it as easy as possible to find the perfect caregiver match for you.</p>            
+               
+                <h1>Step One:</h1>
+                <p>Please log in using your email address and password.</p>
+                <div style="text-align: center;">
+                <a href="www.carewithu.com/login" class="button">Log in here</a>
+                </div>
                 <br>
-                <p>For assistance, visit our&nbsp;<a href="http://www.carewithu.com/contact">contact page.</a></p>
-                
-                <p>- The CareWithU Team</p>
+                <!-- <div class="center-container">
+                <img src="img/SignIn.png" alt="Sign In Page" class="image">
+            </div> -->
+                <br>
+               
+                <h1>Step Two:</h1>
+                <p>Choose whether the care is for yourself or a loved one. We also work with clients&#47;residents who are living in care facilities.</p>
+                <br>
+                <div class="center-container">
+                <img src="img/WhoNeedsCare.png" alt="Who Needs Care?" class="image">
+                </div>
+                <br>
+        
+                <h1>Step Three:</h1>
+                <p>Choose the type of care you would like to receive. We offer a wide range of services; see this section of our app for an entire list. You can choose as many or as few as you need.</p>
+                <br>
+                <div class="center-container">
+                <img src="img/TypesOfCare.png" alt="Types of Care" class="image">
+                </div>
+                <br>                
+
+                <h1>Step Four:</h1>
+                <p>After choosing the type of care you like to receive, you can also specify how much or how little care you could like to receive. You can also describe the task you need in more detail.</p>
+                <p>Now there's only one more step to go!</p>
+                <br>
+                <div class="center-container">
+                <img src="img/TaskSize.png" alt="TaskSize" class="image">
+                </div>
+                <br>                
+
+                <h1>Step Five:</h1>
+                <p>Our app will now show you a list of all the qualified caregivers who are available to help. You can tap on their profiles to schedule a visit.</p>
+                <p>For your safety, we ensure on our end that all caregivers have the necessary qualifications and are screened through security checks.</p>
+                <br>
+                <div class="center-container">
+                <img src="img/CaregiverProifle.png" alt="Caregiver Proifle" class="image">
+                </div>
+                <br>
+              
+                <p>If you have any questions or need assistance, our team is here to help! Feel free to <a
+                        href="http://www.carewithu.com/contact">contact us</a> anytime.</p>
+                <p>We&apos;re thrilled to have you as part of the CareWithU community. Let&apos;s make a difference together!</p>
+                <p>— The CareWithU Team</p>
             </div>
 
             <div class="footer">

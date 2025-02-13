@@ -1,4 +1,4 @@
-<!--To be sent to careseeker if the caregiver has cancelled on their end, but the appointment is still requested  24 hours or more before-->
+<!--To send when Caregiver has an upcoming appointment-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Appointment No-Show</title>
+        <title>Appointment Pending</title>
         <style>
       body {
                 background-color: #f6f6f9;
@@ -55,9 +55,10 @@
                 display: inline-block;
                 background: #1D1E25;
                 color: #fff;
+                font-family: Poppins, sans-serif;
+                font-size: 20px;
                 padding: 12px 20px;
                 text-decoration: none;
-                font-weight: bold;
                 border-radius: 5px;
                 margin-top: 10px;
                 box-shadow: 3px 3px 5px #0000004d;
@@ -104,40 +105,41 @@
                 <!--Don't use img class on logo as it rounds the edges!-->
                 <img src="img/LogoTransparent.png" alt="CareWithU Logo">
                 
-                <h1>Your appointment needs to be rescheduled.</h1>
+                <h1>Appointment pending</h1>
             </div>
             <div class="content">
-                <p>Hello [USERNAME].</p>
-                <!--TODO: Make the Name/Date/Time/Address correspond to the appointment details on the site/app-->
-                <p>Unfortunately, [CAREGIVER] will be unable to make it to the following appointment.</p>
-                <br>
-                    <div class="details">
-                        <table>
-                            <tr>
-                                <td><strong>Date:</strong></td>
-                                <td>[INSERT DATE HERE]</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Time:</strong></td>
-                                <td>[INSERT TIME HERE]</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Address:</strong></td>
-                                <td>Street Address<br>
-                                    City</td>
-                            </tr>
-                        </table>
-                    </div>
-                <br>        
-                <p>Please click the link below to create a new appointment with a different caregiver.</p>
-                <p>You will <u>not</u> be charged for the cancelled appointment.</p>
-
-                <!--TODO: Add proper link to button-->
-                <a href="http://www.carewithu.com/" class="button">Create New Appointment</a>
-
-                    <p>For assistance, please visit our&nbsp;<a href="http://www.carewithu.com/contact">contact page.</a></p>
+                <p>Hello [CAREGIVER].</p>
                 
-                    <p>- The CareWithU Team</p>
+                <p>You have a pending appointment with [CARESEEKER]. Please see the details below:</p>
+                <br>    
+                <!--TODO: Make the Name/Date/Time/Address correspond to the appointment details on the site/app-->
+                
+                <div class="details">
+                    <table>
+                        <tr>
+                            <td><strong>Date:</strong></td>
+                            <td>[INSERT DATE HERE]</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Time:</strong></td>
+                            <td>[INSERT TIME HERE]</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Address:</strong></td>
+                            <td>Street Address<br>
+                                City</td>
+                    </tr>
+                </table>
+                </div>
+                <br>
+                <p>To confirm this appointment, please visit the website or the CareWithU mobile app.</p>
+                <p>If this appointment is not confirmed within 24 hours before it&apos;s scheduled to start, it will automatically be cancelled.</p>
+
+                <p>If you have any questions or need assistance, our team is here to help! Feel free to&nbsp;<a href="http://www.carewithu.com/contact">contact us</a> anytime.</p>
+                
+                <p>We look forward to seeing you soon.</p>
+                
+                <p>- The CareWithU Team</p>
             </div>
             
             <div class="footer">

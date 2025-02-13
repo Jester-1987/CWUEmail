@@ -1,4 +1,4 @@
-<!--Email sent out when caregiver has been given verification badge-->
+<!--To be sent to caregiver to remind them to complete their profile-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Verified</title>
+        <title>Profile Completion Reminder</title>
         <style>
             body {
                 background-color: #f6f6f9;
@@ -55,9 +55,10 @@
                 display: inline-block;
                 background: #1D1E25;
                 color: #fff;
+                font-family: Poppins, sans-serif;
+                font-size: 20px;
                 padding: 12px 20px;
                 text-decoration: none;
-                font-weight: bold;
                 border-radius: 5px;
                 margin-top: 10px;
                 box-shadow: 3px 3px 5px #0000004d;
@@ -90,23 +91,19 @@
             <div class="header">
                 <!--Don't use img class on logo as it rounds the edges!-->
                 <img src="img/LogoTransparent.png" alt="CareWithU Logo">
-                <!--TODO: Make sure that [USERNAME] becomes client's name -->
-                <h1>You&apos;re Verified!</h1>
+                <h1>Please complete your profile!</h1>
             </div>
             <div class="content">
-                <p>Congratulations [USERNAME].</p>
-                <p>This email is to inform you that you have passed our verification checks and are now a verified caregiver with CareWithU!</p>
-                <br>
-                    <div class="center-container">
-                        <!--TODO: replace with actual verification mark-->
-                        <img src="img/VerifiedCheck.png" class="image" height="300" width="300">
-                    </div>
-                <br>
-                <p>Your profile page will now bear this symbol so all your clients will know you&apos;re a cut above the rest.</p>
-
-                <p>For assistance, visit our&nbsp;<a href="http://www.carewithu.com/contact">contact page.</a></p>
+            <!--TODO: have [USERNAME] change to client's name-->
+            <p>Hello [USERNAME].</p>
+            <p>This is a friendly reminder to please complete your CareWithU profile. Click the button below to go directly to your profile.</p>
+            <a href="www.carewithu.com/profile" class="button">Complete Your Profile</a>
+            <h1>Why is this so important?</h1>
+            <p>Having a complete profile is the best way to be sure that you&apos;re being matched with the right clients. The more clients you&apos;re able to attract means more people that can receive expert care and more business for you!</p>
+            <p>Thank you for your cooperation.</p>
+            <p>For assistance, visit our&nbsp;<a href="http://www.carewithu.com/contact">contact page.</a></p>
                 
-                <p>- The CareWithU Team</p>
+            <p>- The CareWithU Team</p>
             </div>
             <div class="footer">
                 <div class="center-container">

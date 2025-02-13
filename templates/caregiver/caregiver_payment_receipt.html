@@ -1,4 +1,4 @@
-<!--To be sent to caregiver if they're a no-show to the appointment-->
+<!--Payment receipt-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -6,11 +6,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Appointment Missed</title>
+        <title>Payment Receipt</title>
         <style>
-      body {
+            body {
                 background-color: #f6f6f9;
-                font-family: Arial, sans-serif;
+                font-family: Arial, sans-serif;                
                 margin: 0;
                 padding: 0;
             }
@@ -24,7 +24,7 @@
             }
             .center-container {
                 display: flex;
-                justify-content: center;
+                justify-content: center;          
             }
             .header {
                 background: #40A578;                
@@ -44,20 +44,22 @@
             .content h1 {
                 font-family: Caprasimo, sans-serif;
                 font-size: 30px;
-                color: #40A578;                
+                color: #40A578;
+                             
             }
             .content p {
                 font-size: 20px;
                 line-height: 24px;
-                font-family: Poppins, sans-serif;
+                font-family: Poppins;
             }
             .button {
                 display: inline-block;
                 background: #1D1E25;
                 color: #fff;
+                font-family: Poppins, sans-serif;
+                font-size: 20px;
                 padding: 12px 20px;
                 text-decoration: none;
-                font-weight: bold;
                 border-radius: 5px;
                 margin-top: 10px;
                 box-shadow: 3px 3px 5px #0000004d;
@@ -69,12 +71,22 @@
             }
             .image {
                 filter: drop-shadow(5px 5px 10px #0000004d);
-                border-radius: 5px;
+                border-radius: 10px;
             }
             .logoC {
                 height: 25%;
                 width: 25%;
             }
+            .details {
+                background: #f1f1f1;
+                font-family: Poppins, sans-serif;
+                font-size: 20px;
+                color: 333;              
+                padding: 20px;
+                border-radius: 8px;
+                
+            }
+          
             .footer {
                 text-align: center;
                 padding: 20px;
@@ -83,52 +95,38 @@
                 color: #777;
                 background: #f1f1f1;
             }
-            .details {
-                background: #f1f1f1;
-                padding: 20px;
-                border-radius: 8px;
-            }
-            th, td {
-                padding: 5px;
-                font-size: 20px;
-                font-family: Poppins, sans-serif;
-            }
-            th {
-                background-color: #f4f4f4;
-            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="header">
-                <!--Don't use img class on logo as it rounds the edges!-->
-                <img src="img/LogoTransparent.png" alt="CareWithU Logo">
-                
-                <h1>You didn't show up for your appointment</h1>
-            </div>
-            <div class="content">
-                <p>Hello [CAREGIVER].</p>
-             
-                <p>We noticed that you didn't show up for you appointment with [CARESEEKER].</p>
-                <p>We understand that life sometimes gets in the way of responsibilities, but not showing up to these appointments not only appears unprofessional, it can also put the health and safety of your clients at risk.</p>
-                <p>[CARESEEKER] is not being charged for this appointment - this also means that you will not be paid for it.</p>                
-                <p>For our records, we need to know why this appointment was missed. This step needs to be completed before you can accept/confirm any new appointments.</p>
-                <!--TODO: Direct link to proper address-->
-                <a href="www.carewithu.com/link" class="button">Click here to continue</a>
-                <p><strong>Further missed appointments without prior warning will put your account at risk of deletion!</p>
-           
-                <p>If you did attend this appointment and still received this email, please reach out to us via our&nbsp;<a href="http://www.carewithu.com/contact">contact page</a> to rectify the situation. Otherwise, follow the instructions outlined above.</strong></p>
-                
-                <p>- The CareWithU Team</p>
-                
+                <img src="img/LogoTransparent.png"  alt="CareWithU Logo">
+                <!--TODO: Make sure that [USERNAME] becomes client's name -->
+                <h1>Your payment has been processed</h1>
             </div>
             
+            <div class="content">                
+                <p>Hello [USERNAME].</p>
+                <!--TODO: Make sure that [SERVICE] gets updated appropriately-->
+                <p>Your payment for [SERVICE] has been processed. Please see the receipt below:</p>
+                    <br>
+                        <div class="details">
+                            <!--TODO: Have this update with the appropriate details-->
+                            <p>[RECEIPT DETAILS]</p>
+                            <p>[RECEIPT DETAILS]</p>
+                            <p>[RECEIPT DETAILS]</p>
+                        </div>
+                <br>
+                <p>For assistance, visit our&nbsp;<a href="http://www.carewithu.com/contact">contact page.</a></p>
+                
+                <p>- The CareWithU Team</p>
+            </div>
+
             <div class="footer">
-                <div class="footer">
-                    <div class="center-container">
-                        <img src="img/logoC.png" class="logoC" alt="Logo">
-                    </div>
-                <!--TODO: Create links to App store -->
+                <div class="center-container">
+                    <img src="img/logoC.png" class="logoC" alt="Logo">
+                </div>
+                <!--TODO: Create links to App stores-->
                 <p><strong>Download our App today!</strong></p>
                 <img src="img/app-store.webp" alt="Apple App Store Logo" class="applogo">
                 &nbsp;
@@ -140,5 +138,4 @@
             </div>
         </div>
     </body>
-
 </html>
