@@ -1,4 +1,4 @@
-<!--To be sent to caregiver when a careseeker has requested an appointment with them-->
+<!--invoice reminder email for both caregivers and careseekers-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Appointment request</title>
+        <title>Invoice Reminder</title>
         <style>
             body {
                 background-color: #f6f6f9;
@@ -92,14 +92,6 @@
                 border-radius: 8px;
                 /* filter: drop-shadow(5px 5px 10px #0000004d); */
             }
-            th, td {
-                padding: 5px;
-                font-size: 20x;
-                font-family: Poppins, sans-serif;
-            }
-            th {
-                background-color: #f4f4f4;
-            }
             .footer {
                 text-align: center;
                 padding: 20px;
@@ -108,6 +100,14 @@
                 color: #777;
                 background: #f1f1f1;
             }
+            th, td {
+                padding: 5px;
+                font-size: 20px;
+                font-family: Poppins, sans-serif;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
         </style>
     </head>
     <body>
@@ -115,49 +115,37 @@
             <div class="header">
                 <!--Don't use img class on logo as it rounds the edges!-->
                 <img src="img/LogoTransparent.png" alt="CareWithU Logo">
-                <h1>You have an appointment request</h1>
+                
+                <h1>An invoice is due</h1>
             </div>
             <div class="content">
-            <!--TODO: have [CAREGIVER] change to client's name-->
-            <p>Hello [CAREGIVER].</p>
-            <p>You have received a new appointment request.</p>
-            <p>Please check the details below.</p>
-            <div class="details">
-                <!--TODO: Have the table update with the relevant information-->
-                <table>
-                    <tr>
-                        <td><strong>Client Name:</strong></td>
-                        <td>[INSERT CLIENT NAME]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Date:</strong></td>
-                        <td>[INSERT DATE HERE]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Time:</strong></td>
-                        <td>[INSERT TIME HERE]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Appointment Type:</strong></td>
-                        <td>[INSERT APPOINTMENT TYPE HERE]</td>
-                    </tr>
-                    <tr>
-                        <!--Perhaps only show the city here as this might be the first appointment. They can get the full address when they accept.-->
-                        <td><strong>City:</strong></td>
-                        <td>[INSERT CITY HERE]</td>
-                    </tr>
-                </table>
+                <p>Hello [USERNAME].</p>
+                <p>The following invoice needs your attention.</p>
+                    <div class="details">
+                        <table>
+                            <tr>
+                                <td><strong>Invoice number:</strong></td>
+                                <td>[INVOICE NUMBER]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Due Date:</strong></td>
+                                <td>[DUE DATE]</td>
+                            </tr>
+                        </table>
+                    </div>
+                <a href="www.carewithu.com/invoices" class="button">Manage Invoices</a>
+                                   
+                  <p>For assistance, visit our&nbsp;<a href="http://www.carewithu.com/contact">contact page.</a></p>
+                
+                <p>- The CareWithU Team</p>
+                
             </div>
-            <p>If this is the first time this user has requested an appointment from you, please take a few moments to review their profile.</p>
-            <a href="www.carewithu.com/appointments" class="button">Manage appointments</a>
-            <p>For assistance, visit our&nbsp;<a href="http://www.carewithu.com/contact">contact page.</a></p>
-                            
-            <p>- The CareWithU Team</p>
-            </div>
+            
             <div class="footer">
-                <div class="center-container">
-                    <img src="img/logoC.png" class="logoC" alt="Logo">
-                </div>
+                <div class="footer">
+                    <div class="center-container">
+                        <img src="img/logoC.png" class="logoC" alt="Logo">
+                    </div>
                 <!--TODO: Create links to App store -->
                 <p><strong>Download our App today!</strong></p>
                 <img src="img/app-store.webp" alt="Apple App Store Logo" class="applogo">
@@ -170,4 +158,5 @@
             </div>
         </div>
     </body>
+
 </html>

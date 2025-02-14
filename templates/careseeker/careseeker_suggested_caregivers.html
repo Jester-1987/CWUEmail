@@ -1,4 +1,4 @@
-<!--To be sent to caregiver when a careseeker has requested an appointment with them-->
+<!--To be sent to careseekers-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Appointment request</title>
+        <title>Suggested Caregivers</title>
         <style>
             body {
                 background-color: #f6f6f9;
@@ -92,14 +92,6 @@
                 border-radius: 8px;
                 /* filter: drop-shadow(5px 5px 10px #0000004d); */
             }
-            th, td {
-                padding: 5px;
-                font-size: 20x;
-                font-family: Poppins, sans-serif;
-            }
-            th {
-                background-color: #f4f4f4;
-            }
             .footer {
                 text-align: center;
                 padding: 20px;
@@ -115,41 +107,14 @@
             <div class="header">
                 <!--Don't use img class on logo as it rounds the edges!-->
                 <img src="img/LogoTransparent.png" alt="CareWithU Logo">
-                <h1>You have an appointment request</h1>
+                <h1>Suggested caregivers for you</h1>
             </div>
             <div class="content">
-            <!--TODO: have [CAREGIVER] change to client's name-->
-            <p>Hello [CAREGIVER].</p>
-            <p>You have received a new appointment request.</p>
-            <p>Please check the details below.</p>
-            <div class="details">
-                <!--TODO: Have the table update with the relevant information-->
-                <table>
-                    <tr>
-                        <td><strong>Client Name:</strong></td>
-                        <td>[INSERT CLIENT NAME]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Date:</strong></td>
-                        <td>[INSERT DATE HERE]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Time:</strong></td>
-                        <td>[INSERT TIME HERE]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Appointment Type:</strong></td>
-                        <td>[INSERT APPOINTMENT TYPE HERE]</td>
-                    </tr>
-                    <tr>
-                        <!--Perhaps only show the city here as this might be the first appointment. They can get the full address when they accept.-->
-                        <td><strong>City:</strong></td>
-                        <td>[INSERT CITY HERE]</td>
-                    </tr>
-                </table>
-            </div>
-            <p>If this is the first time this user has requested an appointment from you, please take a few moments to review their profile.</p>
-            <a href="www.carewithu.com/appointments" class="button">Manage appointments</a>
+            <!--TODO: have [CARESEEKER] change to client's name-->
+            <p>Hello [CARESEEKER].</p>
+            <p>Based on your preferences, we have found the <nobr>top-rated</nobr> caregivers available in your area.</p>
+            <!--TODO: Replace placeholder link-->
+            <a href="www.carewithu.com/suggestedcaregivers" class="button">Click here to view profiles</a>
             <p>For assistance, visit our&nbsp;<a href="http://www.carewithu.com/contact">contact page.</a></p>
                             
             <p>- The CareWithU Team</p>
