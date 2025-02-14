@@ -1,4 +1,4 @@
-<!--Daily summary of pending and completed tasks to be sent to Caregiver-->
+<!--To be sent to caregiver if a critical task needs to be completed-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Daily Summary</title>
+        <title>Critical Task Alert</title>
         <style>
             body {
                 background-color: #f6f6f9;
@@ -107,33 +107,21 @@
             <div class="header">
                 <!--Don't use img class on logo as it rounds the edges!-->
                 <img src="img/LogoTransparent.png" alt="CareWithU Logo">
-                <h1>Your daily task summary</h1>
+                <h1>A task needs your attention!</h1>
             </div>
             <div class="content">
             <!--TODO: have [USERNAME] change to client's name-->
-            <p>Hello [USERNAME].</p>
-            <p>Here&apos;s the summary of today&apos;s tasks:</p>
+            <p>Hello [CAREGIVER].</p>
+            <p>Please check the task below for [CARESEEKER] and complete it as soon as possible.</p>
             <br>
                 <div class="details">
              <!--TODO: Have ordered lists generate automatically with pending/completed tasks-->
-                    <h1>Pending Tasks:</h1>
-                        <blockquote>
-                            <ol>
-                                <li>Task one</li>
-                                <li>Task two</li>
-                            </ol>
-                        </blockquote>
-                    <h1>Completed Tasks:</h1>
-                        <blockquote>
-                            <ol>
-                                <li>Task one</li>
-                                <li>Task two</li>
-                            </ol>
-                        </blockquote>
+                    <p>[TASK DETAILS]</p>
+                    <a href="www.carewithu.com/tasks" class="button">Click here to view all tasks</a>
                 </div>
             <br>
             <p>For assistance, visit our&nbsp;<a href="http://www.carewithu.com/contact">contact page.</a></p>
-                
+                            
             <p>- The CareWithU Team</p>
             </div>
             <div class="footer">
