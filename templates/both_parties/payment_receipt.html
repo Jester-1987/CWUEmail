@@ -2,15 +2,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Payment Receipt</title>
         <style>
             body {
                 background-color: #f6f6f9;
-                font-family: Arial, sans-serif;                
+                font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 0;
             }
@@ -24,13 +26,13 @@
             }
             .center-container {
                 display: flex;
-                justify-content: center;          
+                justify-content: center;
             }
             .header {
                 background: #40A578;                
                 color: #fff;
                 text-align: center;
-                font-family: Caprasimo, sans-serif;
+                font-family: Poppins, sans-serif;
                 padding: 20px;
             }
             .header img {
@@ -41,16 +43,37 @@
                 padding: 30px;
                 color: #333;
             }
+            .content ol li::marker {
+                font-family: Poppins, sans-serif;
+                font-weight: bold;
+            }
+            .content ol li {
+                font-family: Poppins, sans-serif;
+                font-size: 20px;
+                font-weight: normal;
+            }
             .content h1 {
-                font-family: Caprasimo, sans-serif;
-                font-size: 30px;
-                color: #40A578;
-                             
+                font-family: Poppins, sans-serif;
+                font-size: 30px;                
             }
             .content p {
                 font-size: 20px;
                 line-height: 24px;
-                font-family: Poppins;
+                font-family: Poppins, sans-serif;
+            }            
+            .details {
+                background: #f1f1f1;
+                padding: 20px;
+                border-radius: 8px;
+            }
+                
+            th, td {
+                padding: 5px;
+                font-size: 20px;
+                font-family: Poppins, sans-serif;
+            }
+            th {
+                background-color: #f4f4f4;
             }
             .button {
                 display: inline-block;
@@ -64,29 +87,22 @@
                 margin-top: 10px;
                 box-shadow: 3px 3px 5px #0000004d;
             }
-            .applogo {
-            filter: drop-shadow(3px 3px 5px #0000004d);
-            height: 40px;
-            width: 135px;
+            .applogo {                
+                height: 40px;
+                width: 135px;
+            }
+            .sociallogo {
+                height: 50px;
+                width: 50px;
             }
             .image {
                 filter: drop-shadow(5px 5px 10px #0000004d);
-                border-radius: 10px;
+                border-radius: 5px;
             }
             .logoC {
                 height: 25%;
                 width: 25%;
             }
-            .details {
-                background: #f1f1f1;
-                font-family: Poppins, sans-serif;
-                font-size: 20px;
-                color: 333;              
-                padding: 20px;
-                border-radius: 8px;
-                
-            }
-          
             .footer {
                 text-align: center;
                 padding: 20px;
@@ -95,17 +111,28 @@
                 color: #777;
                 background: #f1f1f1;
             }
+            .footer a:link {
+                text-decoration: none;
+            }
+            .footer a:visited {
+                text-decoration: none;
+            }
+            .footer a:hover {
+                text-decoration: none;
+            }
+            .footer a:active {
+                text-decoration: none;
+            }   
         </style>
     </head>
     <body>
         <div class="container">
             <div class="header">
-                <img src="img/LogoTransparent.png"  alt="CareWithU Logo">
-                <!--TODO: Make sure that [USERNAME] becomes client's name -->
-                <h1>Your payment has been processed</h1>
-            </div>
-            
-            <div class="content">                
+                <img src="img/LogoGreen.png"  alt="CareWithU Logo">
+                <!--TODO: Make sure that [USERNAME] becomes client's name -->                
+            </div>            
+            <div class="content">
+                <h1>Your payment has been processed.</h1>                
                 <p>Hello [USERNAME].</p>
                 <!--TODO: Make sure that [SERVICE] gets updated appropriately-->
                 <p>Your payment for [SERVICE] has been processed. Please see the receipt below:</p>
@@ -126,16 +153,41 @@
                 <div class="center-container">
                     <img src="img/logoC.png" class="logoC" alt="Logo">
                 </div>
-                <!--TODO: Create links to App stores-->
-                <p><strong>Download our App today!</strong></p>
-                <img src="img/app-store.webp" alt="Apple App Store Logo" class="applogo">
-                &nbsp;
-                &nbsp;
-                <img src="img/GooglePlay.webp" alt="Google Play Store Logo" class="applogo">
-                
-                <p>Follow us on <a href="http://www.carewithu.com/social">social media</a></p>
-                <p>&copy; CareWithU Inc. All rights reserved.</p>
-            </div>
+            <!--TODO: Create links to App store -->
+            <p><strong>Download our App today!</strong></p>
+            <img src="img/app-store.webp" alt="Apple App Store Logo" class="applogo">
+            &nbsp;
+            &nbsp;
+            <img src="img/GooglePlay.webp" alt="Google Play Store Logo" class="applogo">
+            <br>
+            <br>
+            <!--TODO: Add handles to all socials-->
+            <!-- X -->
+            <a href="http://www.x.com/" target="blank">
+            <img src="img/X.png" alt="X Logo" class="sociallogo">
+            </a>
+            &nbsp;
+            <!-- Facebook -->
+            <a href="http://www.facebook.com/" target="blank">
+            <img src="img/Facebook.png" alt="Facebook Logo" class="sociallogo">
+            </a>
+            &nbsp;
+            <!-- Linkedin -->
+            <a href="http://www.linkedin.com/" target="blank">
+            <img src="img/Linkedin.png" alt="Linkedin Logo" class="sociallogo">
+            </a>
+            &nbsp;
+            <!-- Instagram -->
+            <a href="http://instagram.com/" target="blank">
+            <img src="img/Instagram.png" alt="Instagram Logo" class="sociallogo">
+            </a>
+            &nbsp;
+            <!-- TikTok -->
+            <a href="http://tiktok.com/" target="blank">
+            <img src="img/Tiktok.png" alt="TikTok logo" class="sociallogo">
+            </a>                
+            <p>&copy; CareWithU Inc. All rights reserved.</p>
+        </div>
         </div>
     </body>
 </html>
